@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/reactnd-contacts-app.iml" filepath="$PROJECT_DIR$/.idea/reactnd-contacts-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../reactnd-contacts-server2/.idea/reactnd-contacts-server2.iml" filepath="$PROJECT_DIR$/../reactnd-contacts-server2/.idea/reactnd-contacts-server2.iml" />
     </modules>
   </component>
 </project>
