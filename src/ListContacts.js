@@ -1,5 +1,6 @@
 import React, { Component }  from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 class ListContacts extends Component {
   static propTypes = {
@@ -30,6 +31,10 @@ class ListContacts extends Component {
                 placeholder='Search contacts'
                 value={query}
                 onChange={(event) => this.updateQuery(event.target.value)} />
+            <Link
+                to='/create'
+                className='add-contact'
+            >Add Contact</Link>
           </div>
           {filteredContacts.length !== contacts.length && (
               <div className='showing-contacts'>
@@ -42,7 +47,7 @@ class ListContacts extends Component {
               <div className='contact-avatar' style={{ backgroundImage: `url(${contact.avatarURL}`}}></div>
               <div className='contact-details'>
                 <p>{contact.name}</p>
-                <p>@{contact.handle}</p>
+                <p>{contact.handle}</p>
               </div>
               <button onClick={() => onContactRemove(contact)} className='contact-remove'>
                 Remove
